@@ -10,9 +10,9 @@
   componentWillUnmount: ->
     @getDOMNode().removeEventListener("mouseover", @_onOver)
     @getDOMNode().removeEventListener("mouseout", @_onOut)
-    
+
   render: ->
-    R.DOM.img
+    React.DOM.img
       src: @_srcForState()
       style: @props.style
 
